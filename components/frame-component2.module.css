@@ -1,0 +1,112 @@
+.banner {
+  height: 928px;
+  width: 1440px;
+  position: relative;
+  background: linear-gradient(180deg, #2b1567, #000);
+  display: none;
+  max-width: 100%;
+  z-index: 0;
+}
+.a,
+.clipPathGroup {
+  position: relative;
+  z-index: 2;
+}
+.clipPathGroup {
+  height: 56.8px;
+  width: 45.1px;
+}
+.a {
+  text-decoration: none;
+  font-style: italic;
+  color: inherit;
+}
+.sloganContainer {
+  margin: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+  font-family: var(--font-abeezee);
+}
+.sloganContainerWrapper {
+  width: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xl-1) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.ai1 {
+  margin-block-start: 0;
+  margin-block-end: 20px;
+}
+.p {
+  margin: 0;
+}
+.ai {
+  margin: 0 !important;
+  height: 229.8px;
+  position: absolute;
+  bottom: -23.4px;
+  left: 88px;
+  font-size: inherit;
+  line-height: 100px;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  z-index: 3;
+}
+.bannerParent {
+  align-self: stretch;
+  height: 928px;
+  background: linear-gradient(180deg, #2b1567, #000);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-21xl-9) var(--padding-98xl) var(--padding-22xl)
+    var(--padding-21xl);
+  box-sizing: border-box;
+  position: relative;
+  max-width: 100%;
+  gap: var(--gap-xl);
+  z-index: 1;
+  text-align: left;
+  font-size: var(--font-size-81xl);
+  color: var(--color-white);
+  font-family: var(--font-abeezee);
+}
+@media screen and (max-width: 1050px) {
+  .bannerParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 750px) {
+  .ai {
+    font-size: var(--font-size-31xl);
+    line-height: 60px;
+  }
+  .bannerParent {
+    padding-right: var(--padding-39xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .ai {
+    font-size: var(--font-size-11xl);
+    line-height: 40px;
+  }
+  .bannerParent {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
